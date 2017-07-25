@@ -22,4 +22,11 @@ public class TestModel {
         int result=model.compareNumbers(10,10);
         Assert.assertTrue(result==0);
     }
+
+    public @Test void testRandomValue(){
+        Model model = new Model();
+        int result=model.getRandomValue();
+        Assert.assertTrue(result > 0 && result <100);
+
+    }
 }
