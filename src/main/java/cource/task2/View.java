@@ -1,8 +1,6 @@
 package cource.task2;
 
-/**
- * Created by nanya on 7/21/17.
- */
+
 public class View {
     // Text's constants
     public static final String INPUT_INT_DATA = "Input INT value from: ";

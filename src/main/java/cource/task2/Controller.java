@@ -2,9 +2,7 @@ package cource.task2;
 
 import java.util.Scanner;
 
-/**
- * Created by nanya on 7/25/17.
- */
+
 public class Controller {
 
     Model model;

@@ -2,9 +2,7 @@ package cource.task2;
 
 import java.util.Random;
 
-/**
- * Created by nanya on 7/21/17.
- */
+
 public class Model {
     // The Program logic
 
