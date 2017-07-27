@@ -2,7 +2,7 @@ package cource.task3;
 
 import cource.task3.bouquetСharacteristic.*;
 import cource.task3.plantType.Plant;
-import cource.task3.plantType.flowerPlant.Flower;
+
 
 /**
  * Created by nanya on 7/27/17.
