@@ -9,4 +9,13 @@ public class Multicolor extends Flower {
         super(fertilizer, support, number);
     }
 
+    @Override
+    public String toString() {
+        return "Multicolor{" +
+                "fertilizer=" + super.isFertilizer() +
+                ", support=" + super.isSupport() +
+                ", number=" + super.getNumber() +
+                '}';
+    }
+
 }

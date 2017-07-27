@@ -12,6 +12,12 @@ public class Monochromatic extends Flower {
 
     @Override
     public String toString() {
-        return "Monochromatic{}";
+        return "Monochromatic{" +
+                "fertilizer=" + super.isFertilizer() +
+                ", support=" + super.isSupport() +
+                ", number=" + super.getNumber() +
+                '}';
     }
+
+
 }
