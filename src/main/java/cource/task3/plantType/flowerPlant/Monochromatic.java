@@ -9,4 +9,9 @@ public class Monochromatic extends Flower {
     public Monochromatic(boolean fertilizer, boolean support, int number) {
         super(fertilizer, support, number);
     }
+
+    @Override
+    public String toString() {
+        return "Monochromatic{}";
+    }
 }

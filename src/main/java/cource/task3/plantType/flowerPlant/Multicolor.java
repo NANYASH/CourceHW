@@ -8,4 +8,5 @@ public class Multicolor extends Flower {
     public Multicolor(boolean fertilizer, boolean support, int number) {
         super(fertilizer, support, number);
     }
+
 }
