@@ -1,3 +1,4 @@
+package testsTask3;
 
 import cource.task2.Model;
 import cource.task2.View;

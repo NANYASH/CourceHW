@@ -1,3 +1,5 @@
+package testsTask3;
+
 import org.junit.Assert;
 import org.junit.Test;
 import cource.task2.Model;
