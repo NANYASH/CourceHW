@@ -1,4 +1,4 @@
-package cource.Task2;
+package cource.task2;
 
 /**
  * Created by nanya on 7/21/17.

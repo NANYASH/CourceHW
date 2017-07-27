@@ -1,7 +1,7 @@
 
-import cource.Task2.Model;
-import cource.Task2.View;
-import cource.Task2.Controller;
+import cource.task2.Model;
+import cource.task2.View;
+import cource.task2.Controller;
 
 
 import org.junit.Assert;
@@ -14,6 +14,7 @@ import java.util.Scanner;
  * Created by nanya on 7/25/17.
  */
 public class TestController {
+
 
     Model model= new Model();
     Controller controller = new Controller(model,new View());

@@ -1,4 +1,4 @@
-package cource.Task2;
+package cource.task2;
 
 import java.util.Scanner;
 

@@ -1,9 +1,8 @@
-package cource.Task1;
+package cource.task2;
 
-/**
- * Created by nanya on 7/20/17.
- */
+
 public class Main {
+
     public static void main(String[] args) {
         // Initialization
         Model model = new Model();
