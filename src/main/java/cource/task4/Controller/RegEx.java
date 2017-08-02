@@ -6,28 +6,28 @@ import java.awt.*;
  * Created by nanya on 7/28/17.
  */
 public class RegEx {
-    private static final String SURNAME = "^[A-Za-z]$";
-    private static final String NAME = "^[A-z]$";
-    private static final String PATRONYMIC ="^[A-z]{2-20}$";
+    private static final String SURNAME = "^[A-z'-]{1,20}$";
+    private static final String NAME = "^[A-z'-]{1,20}$";
+    private static final String PATRONYMIC ="^[A-z'-]{1,20}$";
 
     //Фамилия + Пробел + Первая буква Имени + точка
 
-    private static final String NICKNAME = "^[A-z]{2-20}$";
+    private static final String NICKNAME = "^[A-z'-]{1,20}$";
 
-    private static final String COMMENT = "^[.*]{1-100}$";
+    private static final String COMMENT = "^[A-z0-9-!-.-]{1,100}$";
 
 
-    private static final String HOME_PHONE = "^[]{}$";
-    private static final String MOB_PHONE1 = "^+380\\d{3}\\d{2}\\d{2}\\d{2}$";
-    private static final String MOB_PHONE2 = "^[]{}$";
+
+    private static final String MOB_PHONE = "^+380\\d{3}\\d{2}\\d{2}\\d{2}$";
+
 
     private static final String EMAIL = "^([a-z0-9_-]+\\.)*[a-z0-9_-]+@[a-z0-9_-]+(\\.[a-z0-9_-]+)*\\.[a-z]{2,6}$";
     private static final String SKYPE = "^[a-z][a-z0-9]{5,31}$";
 
 
     private static final String INDEX = "^\\b[0-9]{5}\\b$";
-    private static final String CITY = "^[A-z]{2-30}$";
-    private static final String STREET = "[A-z]{2-30}$";
+    private static final String CITY = "^[a-zA-Z'-]{1,20}$";
+    private static final String STREET = "[a-zA-Z'-]{1,20}$";
     private static final String BUILDING_NUMBER = "^[0-9]{1,3}$" ;
     private static final String APARTMENT_NUMBER = "^[0-9]{1,3}$";
 
@@ -37,8 +37,8 @@ public class RegEx {
     private static final String GROOP = "^FAMILY|FRIENDS|WORK$";
 
     private static final String[] regexArray = {SURNAME,NAME,PATRONYMIC,NICKNAME,
-            COMMENT,GROOP,HOME_PHONE,MOB_PHONE1,MOB_PHONE2,EMAIL,
-    SKYPE,INDEX,CITY,STREET,BUILDING_NUMBER,APARTMENT_NUMBER,CREATE_DATE,EDIT_DATE};
+            COMMENT,GROOP,MOB_PHONE,EMAIL, SKYPE,INDEX,CITY,STREET,BUILDING_NUMBER,
+            APARTMENT_NUMBER,CREATE_DATE,EDIT_DATE};
 
     public static String getSURNAME() {
         return SURNAME;
@@ -64,16 +64,8 @@ public class RegEx {
         return GROOP;
     }
 
-    public static String getHomePhone() {
-        return HOME_PHONE;
-    }
-
     public static String getMobPhone1() {
-        return MOB_PHONE1;
-    }
-
-    public static String getMobPhone2() {
-        return MOB_PHONE2;
+        return MOB_PHONE;
     }
 
     public static String getEMAIL() {

@@ -14,9 +14,7 @@ public class Note {
     private String nickName;
     private String comment;
     private Groop groop;
-    private String homePhone;
-    private String mobPhone1;
-    private String mobPhone2;
+    private String mobPhone;
     private String email;
     private String skype;
     private Address address;
@@ -24,18 +22,15 @@ public class Note {
     private String editDate;
 
     public Note(String surname, String name, String patronymic, String nickName,
-                String comment, Groop groop, String homePhone, String mobPhone1,
-                String mobPhone2, String email, String skype, Address address,
-                String createDate, String editDate) {
+                String comment, Groop groop, String mobPhone, String email, String skype,
+                Address address, String createDate, String editDate) {
         this.surname = surname;
         this.name = name;
         this.patronymic = patronymic;
         this.nickName = nickName;
         this.comment = comment;
         this.groop = groop;
-        this.homePhone = homePhone;
-        this.mobPhone1 = mobPhone1;
-        this.mobPhone2 = mobPhone2;
+        this.mobPhone = mobPhone;
         this.email = email;
         this.skype = skype;
         this.address = address;
@@ -91,28 +86,12 @@ public class Note {
         this.groop = groop;
     }
 
-    public String getHomePhone() {
-        return homePhone;
+    public String getMobPhone() {
+        return mobPhone;
     }
 
-    public void setHomePhone(String homePhone) {
-        this.homePhone = homePhone;
-    }
-
-    public String getMobPhone1() {
-        return mobPhone1;
-    }
-
-    public void setMobPhone1(String mobPhone1) {
-        this.mobPhone1 = mobPhone1;
-    }
-
-    public String getMobPhone2() {
-        return mobPhone2;
-    }
-
-    public void setMobPhone2(String mobPhone2) {
-        this.mobPhone2 = mobPhone2;
+    public void setMobPhone(String mobPhone) {
+        this.mobPhone = mobPhone;
     }
 
     public String getEmail() {
@@ -164,9 +143,7 @@ public class Note {
                 ", nickName='" + nickName + '\'' +
                 ", comment='" + comment + '\'' +
                 ", groop=" + groop +
-                ", homePhone='" + homePhone + '\'' +
-                ", mobPhone1='" + mobPhone1 + '\'' +
-                ", mobPhone2='" + mobPhone2 + '\'' +
+                ", mobPhone='" + mobPhone + '\'' +
                 ", email='" + email + '\'' +
                 ", skype='" + skype + '\'' +
                 ", address=" + address +

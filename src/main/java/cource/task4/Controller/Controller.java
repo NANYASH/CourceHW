@@ -4,9 +4,10 @@ import cource.task4.Model.Model;
 import cource.task4.Model.entities.Address;
 import cource.task4.Model.entities.Groop;
 import cource.task4.Model.entities.Note;
+import cource.task4.Model.entities.Notebook;
 import cource.task4.View.View;
 
-import java.util.Scanner;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -23,9 +24,7 @@ public class Controller {
     private String nickName;
     private String comment;
     private String groop;
-    private String homePhone;
-    private String mobPhone1;
-    private String mobPhone2;
+    private String mobPhone;
     private String email;
     private String skype;
     private String index;
@@ -35,8 +34,9 @@ public class Controller {
     private String apartmentNumber;
     private String createDate;
     private String editDate;
+    //private List <String> userList;
     private String[] userArray = {surname,name,patronymic,nickName,comment,groop,
-    homePhone,mobPhone1,mobPhone2,email,skype,index,city,street,
+    mobPhone,email,skype,index,city,street,
             buildingNumber,apartmentNumber,createDate,editDate};
 
 
@@ -44,7 +44,7 @@ public class Controller {
     public Controller(Model model,View view) {
         this.model = model;
         this.view = view;
-
+       //this.userList = new ArrayList<String>(15);
 
     }
 
@@ -53,34 +53,51 @@ public class Controller {
         do {
             inputStringValueWithScanner();
 
-        }while (userArray[userArray.length-1]==null);
+        } while (userArray[userArray.length-1]==null);
         setFields();
 
-        model.getNotebook().addNote(new Note(this.surname,this.name,this.patronymic,this.nickName,
-                this.comment,Groop.valueOf(this.groop),this.homePhone,this.mobPhone1,this.mobPhone2,
-                this.email,this.skype,new Address(this.index,this.city,this.street,this.buildingNumber,
-                this.apartmentNumber),this.createDate,this.editDate));
+        Notebook notebook = new Notebook();
 
-
-
+        Address address = new Address(this.index,this.city,this.street,this.buildingNumber,
+                this.apartmentNumber);
+        Note note = new Note(this.surname,this.name,this.patronymic,this.nickName,
+                this.comment,Groop.valueOf(this.groop),this.mobPhone,this.email,this.skype,address,this.createDate,
+                this.editDate);
+        notebook.addNote(note);
+        System.out.println(notebook.getNoteList().get(0));
 
 
     }
 
     // The Utility methods
-    public void inputStringValueWithScanner() {
 
-        view.printMessage(view.INPUT);
+    public void inputStringValueWithScanner() {
         Scanner scanner = new Scanner(System.in);
         for (int i = 0;i<userArray.length;i++) {
+            view.printMessage(view.INPUT,view.FIELDS_NAMES[i]);
             userArray[i] = scanner.next();
             while (!userArray[i].matches(RegEx.getRegexArray()[i])) {
-                view.printMessage(view.WRONG_INPUT + view.INPUT);
+                view.printMessage(view.WRONG_INPUT);
+                view.printMessage(view.INPUT,view.FIELDS_NAMES[i]);
                 userArray[i] = scanner.next();
 
             }
         }
     }
+   /*public void inputStringValueWithScanner(){
+       Scanner scanner = new Scanner(System.in);
+       for (int i = 0 ; i<userList.size();i++){
+           view.printMessage(view.INPUT,view.FIELDS_NAMES[i]);
+           userList.add(i,scanner.next());
+           while (userList.get(i).matches(RegEx.getRegexArray()[i])){
+               view.printMessage(view.WRONG_INPUT);
+               view.printMessage(view.INPUT,view.FIELDS_NAMES[i]);
+               userList.add(i,scanner.next());
+           }
+
+       }*/
+
+
     public void setFields(){
         this.surname = userArray[0];
         this.name = userArray[1];
@@ -88,18 +105,16 @@ public class Controller {
         this.nickName = userArray[3];
         this.comment = userArray[4];
         this.groop = userArray[5];
-        this.homePhone = userArray[6];
-        this.mobPhone1 = userArray[7];
-        this.mobPhone2 = userArray[8];
-        this.email = userArray[9];
-        this.skype = userArray[10];
-        this.index = userArray[11];
-        this.city = userArray[12];
-        this.street = userArray[13];
-        this.buildingNumber = userArray[14];
-        this.apartmentNumber = userArray[15];
-        this.createDate = userArray[16];
-        this.editDate = userArray[17];
+        this.mobPhone = userArray[6];
+        this.email = userArray[7];
+        this.skype = userArray[8];
+        this.index = userArray[8];
+        this.city = userArray[10];
+        this.street = userArray[11];
+        this.buildingNumber = userArray[12];
+        this.apartmentNumber = userArray[13];
+        this.createDate = userArray[14];
+        this.editDate = userArray[15];
 
 
     }

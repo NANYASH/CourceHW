@@ -1,5 +1,6 @@
 package cource.task4.Model.entities;
 
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -9,8 +10,8 @@ public class Notebook {
 
     private  List<Note> noteList;
 
-    public Notebook(List<Note> noteList) {
-        this.noteList = noteList;
+    public Notebook() {
+        this.noteList =new LinkedList<Note>();
     }
 
     public void addNote(Note note){

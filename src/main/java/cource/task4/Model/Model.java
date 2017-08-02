@@ -7,7 +7,11 @@ import cource.task4.Model.entities.Notebook;
  */
 public class Model {
 
-    private  Notebook notebook;
+    private Notebook notebook;
+
+    public Model() {
+        this.notebook = new Notebook();
+    }
 
     public Notebook getNotebook() {
         return notebook;
