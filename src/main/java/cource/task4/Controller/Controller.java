@@ -56,17 +56,6 @@ public class Controller {
         } while (userArray[userArray.length-1]==null);
         setFields();
 
-        Notebook notebook = new Notebook();
-
-        Address address = new Address(this.index,this.city,this.street,this.buildingNumber,
-                this.apartmentNumber);
-        Note note = new Note(this.surname,this.name,this.patronymic,this.nickName,
-                this.comment,Groop.valueOf(this.groop),this.mobPhone,this.email,this.skype,address,this.createDate,
-                this.editDate);
-        notebook.addNote(note);
-        System.out.println(notebook.getNoteList().get(0));
-
-
     }
 
     // The Utility methods
@@ -80,8 +69,8 @@ public class Controller {
                 view.printMessage(view.WRONG_INPUT);
                 view.printMessage(view.INPUT,view.FIELDS_NAMES[i]);
                 userArray[i] = scanner.next();
-
             }
+
         }
     }
    /*public void inputStringValueWithScanner(){
@@ -118,5 +107,14 @@ public class Controller {
 
 
     }
+
+    public Note createNote(){
+        Address address = new Address(this.index,this.city,this.street,this.buildingNumber,this.apartmentNumber);
+        Note note = new Note(this.surname,this.name,this.patronymic,
+                this.nickName,this.comment,Groop.valueOf(this.groop),this.mobPhone,
+                this.email,this.skype,address,this.createDate,this.editDate);
+
+    return note;
+    };
 
 }

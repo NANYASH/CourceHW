@@ -15,6 +15,7 @@ public class Notebook {
     }
 
     public void addNote(Note note){
+
         noteList.add(note);
     };
 

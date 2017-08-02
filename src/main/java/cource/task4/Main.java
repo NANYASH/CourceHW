@@ -15,6 +15,8 @@ public class Main {
         Controller controller = new Controller(model, view);
         // Run
         controller.processUser();
+        model.getNotebook().addNote(controller.createNote());
+        System.out.println(model.getNotebook().getNoteList().get(0));
     }
 
 }
