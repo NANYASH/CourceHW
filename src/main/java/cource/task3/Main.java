@@ -1,7 +1,9 @@
 package cource.task3;
 
-import cource.task3.bouquetСharacteristic.*;
-import cource.task3.plantType.flowerPlant.Monochromatic;
+import cource.task3.model.bouquetСharacteristic.*;
+import cource.task3.model.Accessories;
+import cource.task3.model.Bouquet;
+import cource.task3.model.plantType.flowerPlant.Monochromatic;
 
 
 

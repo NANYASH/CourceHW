@@ -1,7 +1,7 @@
-package cource.task3;
+package cource.task3.model;
 
-import cource.task3.bouquetСharacteristic.*;
-import cource.task3.plantType.Plant;
+import cource.task3.model.bouquetСharacteristic.*;
+import cource.task3.model.plantType.Plant;
 
 
 /**

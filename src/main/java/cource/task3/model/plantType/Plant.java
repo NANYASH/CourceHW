@@ -1,4 +1,4 @@
-package cource.task3.plantType;
+package cource.task3.model.plantType;
 
 /**
  * Created by nanya on 7/27/17.

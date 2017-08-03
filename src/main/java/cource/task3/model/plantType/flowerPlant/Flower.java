@@ -1,6 +1,6 @@
-package cource.task3.plantType.flowerPlant;
+package cource.task3.model.plantType.flowerPlant;
 
-import cource.task3.plantType.Plant;
+import cource.task3.model.plantType.Plant;
 
 
 public class Flower extends Plant {

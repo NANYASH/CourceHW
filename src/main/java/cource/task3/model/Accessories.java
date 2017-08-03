@@ -1,4 +1,4 @@
-package cource.task3;
+package cource.task3.model;
 
 /**
  * Created by nanya on 7/27/17.
