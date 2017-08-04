@@ -4,12 +4,11 @@ import cource.task4.Model.Model;
 import cource.task4.Model.entities.Address;
 import cource.task4.Model.entities.Groop;
 import cource.task4.Model.entities.Note;
-import cource.task4.Model.entities.Notebook;
+
 import cource.task4.View.View;
 
 import java.util.*;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+
 
 /**
  * Created by nanya on 7/28/17.
@@ -73,19 +72,6 @@ public class Controller {
 
         }
     }
-   /*public void inputStringValueWithScanner(){
-       Scanner scanner = new Scanner(System.in);
-       for (int i = 0 ; i<userList.size();i++){
-           view.printMessage(view.INPUT,view.FIELDS_NAMES[i]);
-           userList.add(i,scanner.next());
-           while (userList.get(i).matches(RegEx.getRegexArray()[i])){
-               view.printMessage(view.WRONG_INPUT);
-               view.printMessage(view.INPUT,view.FIELDS_NAMES[i]);
-               userList.add(i,scanner.next());
-           }
-
-       }*/
-
 
     public void setFields(){
         this.surname = userArray[0];

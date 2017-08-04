@@ -2,9 +2,7 @@ package cource.task4.Controller;
 
 import java.awt.*;
 
-/**
- * Created by nanya on 7/28/17.
- */
+
 public class RegEx {
     private static final String SURNAME = "^[A-z'-]{1,20}$";
     private static final String NAME = "^[A-z'-]{1,20}$";
@@ -34,7 +32,7 @@ public class RegEx {
     private static final String CREATE_DATE = "^[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])$";//YYYY-MM-DD
     private static final String EDIT_DATE = "^[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])$";//YYYY-MM-DD
 
-    private static final String GROOP = "^FAMILY|FRIENDS|WORK$";
+    private static final String GROOP = "^FAMILY|FRIENDS|WORK|family|friends|work|Family|Friends|Work$";
 
     private static final String[] regexArray = {SURNAME,NAME,PATRONYMIC,NICKNAME,
             COMMENT,GROOP,MOB_PHONE,EMAIL, SKYPE,INDEX,CITY,STREET,BUILDING_NUMBER,
