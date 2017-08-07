@@ -1,4 +1,4 @@
-package cource.task5;
+package cource.task5.creationalPatterns;
 
 public class PrototypeApp {
     public static void main(String[] args) {
