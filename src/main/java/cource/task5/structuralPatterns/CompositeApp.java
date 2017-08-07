@@ -12,9 +12,9 @@ public class CompositeApp {
         Shape triangle1 = new Triangle();
 
         Shape square3 = new Squuare();
-        Shape circle1 = new Cicrle();
-        Shape circle2 = new Cicrle();
-        Shape circle3 = new Cicrle();
+        Shape circle1 = new Circle();
+        Shape circle2 = new Circle();
+        Shape circle3 = new Circle();
 
         Composite composit = new Composite();
         Composite composit1 = new Composite();
@@ -55,7 +55,7 @@ class Triangle implements Shape {
     }
 }
 
-class Cicrle implements Shape {
+class Circle implements Shape {
     public void draw() {
         System.out.println("Hi,I'm cicrle.");
     }
