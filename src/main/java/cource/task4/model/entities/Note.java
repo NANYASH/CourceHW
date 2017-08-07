@@ -1,7 +1,4 @@
-package cource.task4.Model.entities;
-
-import cource.task4.Model.entities.Address;
-import cource.task4.Model.entities.Groop;
+package cource.task4.model.entities;
 
 /**
  * Created by nanya on 7/28/17.

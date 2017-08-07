@@ -1,6 +1,4 @@
-package cource.task4.Controller;
-
-import java.awt.*;
+package cource.task4.controller;
 
 
 public class RegEx {

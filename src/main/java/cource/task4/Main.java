@@ -1,7 +1,7 @@
 package cource.task4;
 
-import cource.task4.Controller.Controller;
-import cource.task4.Model.Model;
+import cource.task4.controller.Controller;
+import cource.task4.model.Model;
 import cource.task4.View.View;
 
 /**

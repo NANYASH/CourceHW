@@ -1,4 +1,4 @@
-package cource.task4.Model.entities;
+package cource.task4.model.entities;
 
 import java.util.LinkedList;
 import java.util.List;

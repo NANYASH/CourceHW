@@ -1,4 +1,4 @@
-package cource.task4.Model.entities;
+package cource.task4.model.entities;
 
 /**
  * Created by nanya on 7/28/17.

@@ -1,9 +1,9 @@
-package cource.task4.Controller;
+package cource.task4.controller;
 
-import cource.task4.Model.Model;
-import cource.task4.Model.entities.Address;
-import cource.task4.Model.entities.Groop;
-import cource.task4.Model.entities.Note;
+import cource.task4.model.Model;
+import cource.task4.model.entities.Address;
+import cource.task4.model.entities.Groop;
+import cource.task4.model.entities.Note;
 
 import cource.task4.View.View;
 

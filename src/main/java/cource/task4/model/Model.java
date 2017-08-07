@@ -1,6 +1,6 @@
-package cource.task4.Model;
+package cource.task4.model;
 
-import cource.task4.Model.entities.Notebook;
+import cource.task4.model.entities.Notebook;
 
 /**
  * Created by nanya on 7/28/17.
