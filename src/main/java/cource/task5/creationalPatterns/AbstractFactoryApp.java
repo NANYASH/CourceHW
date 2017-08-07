@@ -9,6 +9,7 @@ public class AbstractFactoryApp {
         Keyboard keyboard = deviceFactory.getKeyboard();
         Touchpad touchpad = deviceFactory.getTouchpad();
         mouse.click();
+        mouse.dblClick();
         keyboard.print();
         touchpad.track(10,10);
 
