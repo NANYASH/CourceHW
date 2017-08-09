@@ -1,5 +1,6 @@
 package cource.task5.structuralPatterns;
 
+
 public class FacadeApp {
 
     public static void main(String[] args) {
