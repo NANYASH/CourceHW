@@ -1,6 +1,6 @@
 package cource.task7;
 
-public class AdapterApp2 {
+public class AdapterApp {
     public static void main(String[] args) {
        ConnectorDVI connectorDVI = new DVIAdapterFromSVGA();
        connectorDVI.hookUp();
