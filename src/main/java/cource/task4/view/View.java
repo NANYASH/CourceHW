@@ -1,10 +1,5 @@
-package cource.task4.View;
+package cource.task4.view;
 
-import java.util.ArrayList;
-
-/**
- * Created by nanya on 7/28/17.
- */
 public class View {
 
     public static final String INPUT= "Input your ";

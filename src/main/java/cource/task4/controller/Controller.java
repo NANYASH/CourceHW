@@ -5,14 +5,12 @@ import cource.task4.model.entities.Address;
 import cource.task4.model.entities.Groop;
 import cource.task4.model.entities.Note;
 
-import cource.task4.View.View;
+import cource.task4.view.View;
 
 import java.util.*;
 
 
-/**
- * Created by nanya on 7/28/17.
- */
+
 public class Controller {
 
     Model model;

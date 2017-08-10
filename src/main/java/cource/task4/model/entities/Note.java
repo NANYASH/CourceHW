@@ -18,6 +18,7 @@ public class Note {
     private String createDate;
     private String editDate;
 
+
     public Note(String surname, String name, String patronymic, String nickName,
                 String comment, Groop groop, String mobPhone, String email, String skype,
                 Address address, String createDate, String editDate) {
