@@ -5,9 +5,9 @@ public class StateApp {
     public static void main(String[] args) {
         Activity context = new Activity();
         context.setHuman("see animal");
-        context.human.introduce();
+        context.introduce();
         context.setHuman("mushroom field");
-        context.human.introduce();
+        context.introduce();
 
     }
 }
@@ -17,13 +17,16 @@ interface Human{
     void introduce();
 }
 class Hunter implements Human{
-    public void introduce() {System.out.println("I'm a hunter");}
+    public void introduce() {
+        System.out.println("I'm a hunter");}
 }
 class Fisher implements Human{
-    public void introduce() {System.out.println("I'm a fisher");}
+    public void introduce() {
+        System.out.println("I'm a fisher");}
 }
 class MushroomerPicker implements Human{
-    public void introduce() {System.out.println("I'm a mushroom picker");}
+    public void introduce() {
+        System.out.println("I'm a mushroom picker");}
 }
 
 //Context
@@ -43,5 +46,8 @@ class Activity {
             default:
                 System.out.println("No such activity!");
         }
+    }
+    void introduce(){
+        human.introduce();
     }
 }
