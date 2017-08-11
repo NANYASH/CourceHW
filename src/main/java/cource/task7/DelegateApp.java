@@ -1,6 +1,5 @@
 package cource.task7;
 
-
 public class DelegateApp {
     public static void main(String[] args) {
         DirectorSecretar directorSecretar = new DirectorSecretar();
