@@ -1,5 +1,6 @@
 package cource.task5.behavioralPatterns;
 
+
 public class StateApp {
     public static void main(String[] args) {
 

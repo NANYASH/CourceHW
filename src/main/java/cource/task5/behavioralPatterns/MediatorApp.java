@@ -1,7 +1,6 @@
 package cource.task5.behavioralPatterns;
 import java.util.ArrayList;
 import java.util.List;
-
 //!!!!
 
 public class MediatorApp {

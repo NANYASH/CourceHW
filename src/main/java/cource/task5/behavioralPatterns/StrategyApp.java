@@ -1,6 +1,5 @@
 package cource.task5.behavioralPatterns;
 
-
 import java.util.Arrays;
 public class StrategyApp {
     public static void main(String[] args) {
