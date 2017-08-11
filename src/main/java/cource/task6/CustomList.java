@@ -3,7 +3,6 @@ package cource.task6;
 import java.util.ArrayList;
 import java.util.Collection;
 
-
 public class CustomList<E> extends ArrayList<E> {
 
     private static final String EXCEPTION_MESSAGE = "Invalid operation";
