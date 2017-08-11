@@ -9,8 +9,7 @@ public class CustomList<E> extends ArrayList<E> {
     private static final String EXCEPTION_MESSAGE = "Invalid operation";
 
     @Override
-    public E set(int index, Object element) {
-        throw new UnsupportedOperationException(EXCEPTION_MESSAGE);
+    public E set(int index, Object element) {throw new UnsupportedOperationException(EXCEPTION_MESSAGE);
     }
 
     @Override

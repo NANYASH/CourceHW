@@ -17,18 +17,21 @@ interface ManagerEmployee{
 class WarehouseWorker implements ManagerEmployee{
     @Override
     public void solveProblem(){
+
         System.out.println("Solving problems in the warehouse...");
     }
 }
 class Manager implements ManagerEmployee{
     @Override
     public void solveProblem(){
+
         System.out.println("Solving employees problems...");
     }
 }
 class Accountant implements ManagerEmployee{
     @Override
     public void solveProblem(){
+
         System.out.println("Solving accounting problems...");
     }
 
@@ -36,6 +39,7 @@ class Accountant implements ManagerEmployee{
 class Director implements ManagerEmployee{
     @Override
     public void solveProblem(){
+
         System.out.println("Solve hiring/firing problems");
     }
 }
@@ -58,7 +62,6 @@ class DirectorSecretar{
                 break;
         }
     }
-    void solveProblem(){
-        managerEmployee.solveProblem();
+    void solveProblem(){managerEmployee.solveProblem();
     }
 }
